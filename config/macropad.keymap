@@ -9,20 +9,24 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+
+
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp N1>, <&kp N2>, <&bootloader>;
+        };
+    };
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp X
-                &kp Y
-                &kp R
-                &kp E
-                &kp H
-                &kp O
-                &kp B
-                &kp C
-                &kp Z
+                &kp F22     &kp F23   &kp C_MUTE
+                &kp E       &kp H     &kp C_VOL_UP
+                &td0        &kp C     &kp C_VOL_DN
             >;
         };
     };
