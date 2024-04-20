@@ -15,6 +15,13 @@
         default_layer {
             bindings = <
                 &kp X
+                &kp Y
+                &kp R
+                &kp E
+                &kp H
+                &kp O
+                &kp B
+                &kp C
                 &kp Z
             >;
         };
