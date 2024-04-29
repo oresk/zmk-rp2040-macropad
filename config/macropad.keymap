@@ -24,9 +24,9 @@
 
         default_layer {
             bindings = <
-                &kp F22     &kp F23   &kp C_MUTE
-                &kp E       &kp H     &kp C_VOL_UP
-                &td0        &kp C     &kp C_VOL_DN
+                &kp F17      &kp F18   &kp C_MUTE
+                &td0         &kp C     &kp C_VOL_UP
+                &kp F15      &kp F16   &kp C_VOL_DN
             >;
         };
     };
